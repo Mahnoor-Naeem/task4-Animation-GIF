@@ -1,0 +1,55 @@
+body{
+    background-color: #212121;
+    /* padding: auto; */
+}
+article{
+    background-color: black;
+    text-align: center;
+    padding: 260px 0px;
+    margin: auto;
+}
+span{
+    color: #212121;
+    font-size: 80px;
+    transition: color 0.2s;
+}
+
+.icon{
+    color: #f9ff00;
+    font-size: 85px;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+span:hover{
+    color: #e94862;
+} 
+span:nth-of-type(n):hover~span{
+    color: #fdfdfd;
+}
+span:nth-of-type(n):hover+span{
+    color: #f08eb1;
+}
+
+
+/*
+span:nth-of-type(){
+    color: #f08eb1;
+}
+span:nth-of-type(2n), span:nth-of-type(2n+1){
+    color: #fdfdfd;
+}
+span:hover{
+    color: #e94862;
+}
+span:first-of-type{
+    color: #e94862;
+} 
+
+span:nth-of-type(2){
+    color: #f08eb1;
+} */
+/* span:last-of-type{
+    color: #f08eb1;
+} */
+/* #fdfdfd  others */
